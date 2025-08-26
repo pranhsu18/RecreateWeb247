@@ -1,0 +1,385 @@
+.home_page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #bbbbbbfb, #f3f3f3, #ffffff);
+  
+}
+
+
+.hero-section {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #cf3166fb, #a700ff, #180082);
+  padding: 3rem 6rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+ 
+}
+
+.hero-text {
+  margin-top: 2rem ;
+  flex: 1;
+  max-width: 500px;
+  color: white;
+  
+}
+
+.hero-text h1 {
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding-left: 5px;
+  animation: typing 3.5s steps(60, end) forwards , blink 0.7s infinite   , zoomInOut 7s ease-in-out infinite;;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 24ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);   /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Zoomed in */
+  }
+}
+
+.hero-text p {
+  padding: 0 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height:1.6rem;
+  color: #ffffff;
+}
+
+.hero-video {
+  flex: 1;
+  max-width: 580px;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+}
+ 
+
+
+.frontdiv {
+
+  margin: 2em 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  gap: 2rem;
+
+}
+
+.frontdiv1 {
+  
+  margin: 2em 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  gap: 2rem;
+}
+
+/* Base hidden state */
+.imagesection, .headingtextSection {
+  opacity: 0;
+}
+
+/* Image slides in from left */
+.frontdiv .imagesection,
+.frontdiv1 .imagesection {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+/* Text slides in from right */
+.frontdiv .headingtextSection,
+.frontdiv1 .headingtextSection {
+  animation: slideInRight 2s ease-out forwards;
+  animation-delay: 0.5s; /* comes a bit later */
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 
+.imagesection {
+  width: 45%;
+  min-width: 300px;
+  height: 340px;
+}
+
+.imagesection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+.imagesection img:hover {
+  transform: rotateY(360deg);
+  box-shadow: 4px 9px 15px rgba(255, 0, 179, 0.7);
+} */
+
+.imagesection {
+  width: 45%;
+  min-width: 300px;
+  height: 340px;
+}
+
+.imagesection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+/* 🔥 Zoom effect instead of rotation */
+.imagesection img:hover {
+  transform: scale(1.1); /* zoom in */
+  box-shadow: 2px 6px 15px rgba(255, 0, 179, 0.9);
+}
+.imagesection img {
+  animation: zoomPulse 5s ease-in-out infinite; /* subtle zoom in/out always */
+  box-shadow: 2px 6px 15px rgba(255, 0, 179, 0.5);
+}
+
+@keyframes zoomPulse {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+}
+
+
+
+.headingtextSection {
+  max-width: 440px;
+
+}
+
+
+
+.animated-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1944ffc0, #8400ff, #fc00ef, #ff0062);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fireShimmer 0.7s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.animated-heading:hover{
+  transform: scale(1.01);
+}
+
+@keyframes fireShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.headingtextSection p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #1f1f1f;
+  text-align: justify;
+}
+
+.headingtextSection p:hover{
+  color: #141414;
+  
+}
+.solutionsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  padding: 1rem 3rem;
+}
+.headings {
+  
+  font-size: 54px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #cf3166fb, #a700ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 1px solid #000000;
+  text-align: left;
+  padding-left: 2vmax;
+  margin: 2vmax;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .hero-section {
+    padding: 2rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    white-space: normal; 
+    width: auto;
+    animation: none; 
+  }
+
+  .hero-video {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+
+  .frontdiv, .frontdiv1 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .imagesection {
+    width: 90%;
+    height: auto;
+  }
+
+  .headingtextSection {
+    max-width: 90%;
+  }
+
+  .animated-heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .headings {
+    font-size: 36px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero-section {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .hero-video {
+    max-width: 100%;
+  }
+
+  .imagesection {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .animated-heading {
+    font-size: 1.4rem;
+  }
+
+  .headings {
+    font-size: 28px;
+    margin: 1rem 0;
+  }
+
+  .headingtextSection p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
