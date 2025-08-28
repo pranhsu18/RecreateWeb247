@@ -10,9 +10,9 @@ export default function About() {
 
       <div className="wrapper">
         <div className="aboutus-text">
-          <p>We provide innovative enterprise solutions, ERP implementations, and engaging multimedia content that empower businesses worldwide. With expertise in software, digital design, and customer support, we deliver scalable, creative, and efficient services that enhance productivity, streamline operations, and strengthen brand presence.</p>
+          <p>We provide innovative enterprise solutions, <span>ERP Implementations</span>, and engaging <span>Multimedia Content</span> that empower businesses worldwide. With expertise in <span> Development </span>,<span>Digital Design</span>  and  <span>Customer Support</span> we deliver scalable, creative, and efficient services that enhance productivity, streamline operations, and strengthen brand presence.</p>
         </div>
-        {/* Mission Card */}
+
         <div className="card-info">
           <div className="fronttext">
             <div className="frontheading">
@@ -52,7 +52,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* ✅ Team Section Added */}
+
       <div className="HeadingPartOfHome">
         <h2 className="headings">Meet Our Team</h2>
       </div>

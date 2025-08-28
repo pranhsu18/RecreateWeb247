@@ -1,0 +1,47 @@
+/* ---------- Partners Section ---------- */
+.partners-section {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.partners-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.partners-track {
+  display: flex;
+  width: calc(250px * 12); 
+  animation: scroll 20s linear infinite;
+}
+
+.partners-track img {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 20px;
+  transition:  transform 0.3s ease-in-out;
+}
+
+.partners-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .partners-track img {
+    width: 120px;
+    height: 80px;
+    margin: 0 10px;
+  }
+}

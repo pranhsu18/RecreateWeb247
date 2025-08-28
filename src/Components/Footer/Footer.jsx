@@ -13,7 +13,9 @@ export default function Footer() {
             alt="Global Enterprise Solutions"
             className="footer-logo"
           />
-          <p className="company_description">We deliver innovative ERP and media solutions in today’s competitive digital era.</p>
+          <p className="company_description">
+            We deliver innovative ERP and media solutions in today’s competitive digital era.
+          </p>
           <br />
           <p>United States: 112 Bowery, New York, NY 10013</p>
           <p className="footer-contact">
@@ -47,18 +49,17 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            {/* <a href="https://www.youtube.com/@kashmir.observer"><i className="fab fa-linkedin">LinkedIn</i></a>
-            <a href="https://www.youtube.com/@kashmir.observer"><i className="fab fa-facebook">Facebook</i></a>
-            <a href="https://www.youtube.com/@kashmir.observer"><i className="fab fa-youtube"></i>YouTube</a> */}
+            {/* Add social links later */}
           </div>
         </div>
       </div>
       
-
       {/* Bottom Section */}
       <div className="footer-bottom">
         © {new Date().getFullYear()} <b>Global Enterprise Solutions</b>. All Rights Reserved.  
         <br /> Designed by Global Enterprise Solutions
+        <br />
+        <small className="ai-credit">Some visuals enhanced with AI assistance</small>
       </div>
     </footer>
   );
