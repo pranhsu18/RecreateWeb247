@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .navbar{
+    height:6rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -45,7 +46,6 @@
     
 }
 
-/* navlink tags */
 .navbar_links a{
     color:white;
     text-decoration: none;

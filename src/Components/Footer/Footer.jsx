@@ -56,7 +56,7 @@ export default function Footer() {
       
       {/* Bottom Section */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} <b>Global Enterprise Solutions</b>. All Rights Reserved.  
+        © {new Date().getFullYear()} <b><a href="https://gns.tv/">Global Enterprise Solutions</a></b>. All Rights Reserved.  
         <br /> Designed by Global Enterprise Solutions
         <br />
         <small className="ai-credit">Some visuals enhanced with AI assistance</small>

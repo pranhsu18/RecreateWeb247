@@ -37,6 +37,7 @@ export default function Navbar() {
         <li> <NavLink to ='/'       onClick={toggleMenu}> Home </NavLink> </li>
         {/* <li> <NavLink to='/Careers' onClick={toggleMenu}> <a href="https://gns.tv/jobs">Careers</a> </NavLink> </li> */}
         <li> <NavLink to= '/About'  onClick={toggleMenu}> About Us</NavLink> </li>
+
         <li>  <a href="https://gns.tv/jobs">Careers</a> </li>
         <li> <NavLink to='/Contact' onClick={toggleMenu} > Contact Us </NavLink> </li>
         <li> <NavLink to='/Login'   onClick={toggleMenu} > Login </NavLink> </li>

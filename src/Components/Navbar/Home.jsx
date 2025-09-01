@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import About from "./About";
+import Contact from "./Contact"
 import OurPartners from "./OurPartners";
 
 
@@ -8,40 +9,40 @@ export default function Home() {
   return (
     <div className="home_page">
       <div className="hero-section">
-  {/* Left Text */}
-  <div className="hero-text">
-    <p>
-      We provide
-      <h1 className="hero-heading1">
-        ERP Solutions <br />
-        Mobile App <br />
-        CRM Systems <br />
-        Web Design <br />
-        Multi Media Solutions
-      </h1>
-      <br />
-      to accelerate business growth.
-    </p>
 
-    {/* Contact Us Button */}
-    <div className="contact-button">
-      <a href="/contact" className="contact-btn">
-        Contact Us
-      </a>
-    </div>
-  </div>
+        <div className="hero-text">
+          <p>
+            We provide
+            <br />
+            <h1 className="hero-heading1">
+              ERP Solutions <br />
+              Mobile App <br />
+              CRM Systems <br />
+              Web Design <br />
+              Multi Media Solutions<br />
+            </h1>
+            <br />
+            to accelerate business growth.
+          </p>
 
-  {/* Right Video */}
-  <div className="hero-video">
-    <video
-      src="/Global_Enterprise_Solutions.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-    />
-  </div>
-</div>
+          
+          <div className="contact-button">
+            <a href="/Contact" className="contact-btn">
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div className="hero-video">
+          <video
+            src="/Global_Enterprise_Solutions_1.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+      </div>
 
 
 
@@ -58,7 +59,7 @@ export default function Home() {
 
         <div className="frontdiv">
           <div className="imagesection">
-            <img src="Image_1.png" alt="erp solutions" />
+            <img src="Image8.png" alt="erp solutions" />
           </div>
 
           <div className="headingtextSection">
@@ -70,7 +71,7 @@ export default function Home() {
 
         <div className="frontdiv1">
           <div className="imagesection">
-            <img src="Image_2.png" alt="erp solutions" />
+            <img src="Image7.png" alt="erp solutions" />
           </div>
 
           <div className="headingtextSection">
@@ -83,11 +84,11 @@ export default function Home() {
 
         <div className="frontdiv">
           <div className="imagesection">
-            <img src="Image_3.png" alt="erp solutions" />
+            <img src="Image.png" alt="erp solutions" />
           </div>
 
           <div className="headingtextSection">
-            <h2 className="animated-heading">Software Development & Project Management</h2>
+            <h2 className="animated-heading">Development & Project Management</h2>
             <p>
               We design, develop, and manage customized software solutions using proven frameworks. From new builds to scaling existing systems, we deliver on time, within budget, and with quality—ensuring seamless functionality that drives business growth.
             </p>
@@ -96,11 +97,11 @@ export default function Home() {
 
         <div className="frontdiv1">
           <div className="imagesection">
-            <img src="Image_4.png" alt="erp solutions" />
+            <img src="Image.png" alt="erp solutions" />
           </div>
 
           <div className="headingtextSection">
-            <h2 className="animated-heading">Web Design & Hosting</h2>
+            <h2 className="animated-heading">Mobile and Web Design</h2>
             <p>
               We craft stunning, user-friendly websites with secure, reliable hosting. From sleek designs to seamless navigation, our mobile-responsive, high-performance solutions ensure fast, secure, and always-online digital experiences that connect with and impress your audience.
             </p>

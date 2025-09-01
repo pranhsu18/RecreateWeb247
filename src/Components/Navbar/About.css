@@ -1,4 +1,3 @@
-
 .headings {
   font-size: 54px;
   font-weight: bold;
@@ -16,22 +15,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 1rem;
   gap: 1rem;
 
 }
-.aboutus-text{
+
+.aboutus-text {
   max-width: 25vw;
   height: 33vw;
-    color: blue;
-    border-radius: 15px;
-
+  color: blue;
+  border-radius: 15px;
   padding: 2rem 0;
 }
-.aboutus-text p{
+
+.aboutus-text p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
@@ -40,10 +39,11 @@
   text-align: justify;
 
 }
-span{
+
+span {
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 1.5;   
+  line-height: 1.5;
   background: linear-gradient(to right, #f54266, #8e44ec);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -53,7 +53,6 @@ span{
 
 
 .card-info {
-
   width: 25vw;
   height: 33vw;
   transform-style: preserve-3d;
@@ -62,38 +61,43 @@ span{
   transition: transform 1s ease-in-out;
   position: relative;
 }
-@property --angle{
+
+@property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 
 }
-.card-info::after,.card-info::before{
-  --angle:0deg;
-  content:"";
+
+.card-info::after,
+.card-info::before {
+  --angle: 0deg;
+  content: "";
   border-radius: 15px;
-  position:absolute;
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 50%;
   left: 50%;
-  background: conic-gradient(from var(--angle) , transparent 10% ,  rgb(140, 0, 255),  rgb(255, 0, 234), rgb(255, 0, 85));
+  background: conic-gradient(from var(--angle), transparent 10%, rgb(140, 0, 255), rgb(255, 0, 234), rgb(255, 0, 85));
   translate: -50% -50%;
   z-index: -1;
   padding: 0.2em;
   animation: 3s spin linear infinite;
 }
 
-.card-info::before{
+.card-info::before {
   filter: blur(0.3em);
   opacity: 0.8;
 }
+
 @keyframes spin {
-  from{
-    --angle:0deg;
+  from {
+    --angle: 0deg;
   }
-  to{
-    --angle:360deg;
+
+  to {
+    --angle: 360deg;
 
   }
 }
@@ -102,7 +106,8 @@ span{
   transform: rotateY(180deg);
 }
 
-.backtext, .fronttext {
+.backtext,
+.fronttext {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -128,7 +133,7 @@ span{
   font-size: 20px;
 }
 
-.animated-heading-about{
+.animated-heading-about {
   font-size: 2rem;
   font-weight: bold;
   background: linear-gradient(90deg, #0206ff, #8400ff, #fc00ef, #ff0062);
@@ -136,14 +141,22 @@ span{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation:fireShimmer 2s linear infinite;
+  animation: fireShimmer 2s linear infinite;
   margin-bottom: 1rem;
 }
 
 @keyframes fireShimmer {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .frontheading .icon {
@@ -180,7 +193,6 @@ span{
   margin: 2vmax;
 }
 
-/* --- ✅ Team Section Styles --- */
 .header {
   text-align: center;
   padding: 15px;
@@ -208,7 +220,7 @@ span{
   border: 1px solid #d3d3d3;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.5s;
 }
 
@@ -243,4 +255,24 @@ span{
   line-height: 1.5;
   padding: 0 15px 20px;
   text-align: center;
+}
+
+@media (max-width : 1200px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    gap: 3rem;
+  }
+  .aboutus-text {
+  max-width: 15vh;
+  height: 60vh;
+  border-radius: 15px;
+  padding: 2rem 0;
+}
+  
+
 }
