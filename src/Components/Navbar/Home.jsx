@@ -3,6 +3,7 @@ import "./Home.css";
 import About from "./About";
 import Contact from "./Contact"
 import OurPartners from "./OurPartners";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -27,9 +28,7 @@ export default function Home() {
 
           
           <div className="contact-button">
-            <a href="/Contact" className="contact-btn">
-              Contact Us
-            </a>
+            <Link to="./Contact" className="contact-btn" >Contact Us</Link>
           </div>
         </div>
 
@@ -97,7 +96,7 @@ export default function Home() {
 
         <div className="frontdiv1">
           <div className="imagesection">
-            <img src="Image.png" alt="erp solutions" />
+            <img src="Image9.png" alt="erp solutions" />
           </div>
 
           <div className="headingtextSection">
