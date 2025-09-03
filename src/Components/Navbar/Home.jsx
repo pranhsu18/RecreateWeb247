@@ -1,137 +1,85 @@
 import React from "react";
 import "./Home.css";
 import About from "./About";
-import Contact from "./Contact"
+import Contact from "./RestHome"
 import OurPartners from "./OurPartners";
+import RestHome from "./RestHome"
 import { Link } from "react-router-dom";
-
 
 export default function Home() {
   return (
     <div className="home_page">
       <div className="hero-section">
+        <section className="hero">
+          <div className="hero-container">
 
-        <div className="hero-text">
-          <p>
-            We provide
-            <br />
-            <h1 className="hero-heading1">
-              ERP Solutions <br />
-              Mobile App <br />
-              CRM Systems <br />
-              Web Design <br />
-              Multi Media Solutions<br />
-            </h1>
-            <br />
-            to accelerate business growth.
-          </p>
+            {/* Left Section */}
+            <div className="hero-left">
+              <h2 className="hero-heading">
+                Empowering
+                <div className="highlight"> Enterprise </div>
+                <div className="yellow">with Smart  </div>
+                <div className="last">Global Solutions </div>
+              </h2>
+            </div>
 
-          
-          <div className="contact-button">
-            <Link to="./Contact" className="contact-btn" >Contact Us</Link>
+            {/* Right Section */}
+            <div className="hero-right">
+              <div className="carousel">
+                <div className="carousel-track">
+
+
+                  <div className="service-card">
+                    <img src="enterprise.png" alt="Cloud" />
+                    <p>Enterprise Solutions</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Web_dev.png" alt="Security" />
+                    <p>Web Development</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Mobile_App.png" alt="Mobile" />
+                    <p>Mobile Apps</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Customer_Support.png" alt="AI" />
+                    <p>Customer Support</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Digital_Sol.png" alt="Web" />
+                    <p>Digital Solutions</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="enterprise.png" alt="Cloud" />
+                    <p>Enterprise Solutions</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Web_dev.png" alt="Security" />
+                    <p>Web Development</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Mobile_App.png" alt="Mobile" />
+                    <p>Mobile Apps</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Customer_Support.png" alt="AI" />
+                    <p>Customer Support</p>
+                  </div>
+                  <div className="service-card">
+                    <img src="Digital_Sol.png" alt="Web" />
+                    <p>Digital Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
-        </div>
-
-        <div className="hero-video">
-          <video
-            src="/Global_Enterprise_Solutions_1.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-      <div className="HeadingPartOfHome">
-        <h2 className="headings" >Our Solutions</h2>
-      </div>
-
-      <div className="solutionsection">
-
-        <div className="frontdiv">
-          <div className="imagesection">
-            <img src="Image8.png" alt="erp solutions" />
-          </div>
-
-          <div className="headingtextSection">
-            <h2 className="animated-heading">ERP Implementation & Support</h2>
-            <p>
-              We deliver end-to-end ERP solutions that streamline processes, integrate workflows, and enhance decision-making. From setup to ongoing support, our scalable ERP expertise ensures efficiency, reduced downtime, and productivity tailored to your industry needs.</p>
-          </div>
-        </div>
-
-        <div className="frontdiv1">
-          <div className="imagesection">
-            <img src="Image7.png" alt="erp solutions" />
-          </div>
-
-          <div className="headingtextSection">
-            <h2 className="animated-heading">Digital & Multimedia Solutions</h2>
-            <p>
-              We create engaging multimedia and digital content for businesses and media companies, from print-ready designs to interactive experiences. Our services—image processing, video editing, and content development—elevate brand presence with creativity, consistency, and audience impact.
-            </p>
-          </div>
-        </div>
-
-        <div className="frontdiv">
-          <div className="imagesection">
-            <img src="Image.png" alt="erp solutions" />
-          </div>
-
-          <div className="headingtextSection">
-            <h2 className="animated-heading">Development & Project Management</h2>
-            <p>
-              We design, develop, and manage customized software solutions using proven frameworks. From new builds to scaling existing systems, we deliver on time, within budget, and with quality—ensuring seamless functionality that drives business growth.
-            </p>
-          </div>
-        </div>
-
-        <div className="frontdiv1">
-          <div className="imagesection">
-            <img src="Image9.png" alt="erp solutions" />
-          </div>
-
-          <div className="headingtextSection">
-            <h2 className="animated-heading">Mobile and Web Design</h2>
-            <p>
-              We craft stunning, user-friendly websites with secure, reliable hosting. From sleek designs to seamless navigation, our mobile-responsive, high-performance solutions ensure fast, secure, and always-online digital experiences that connect with and impress your audience.
-            </p>
-          </div>
-        </div>
-
-        <div className="frontdiv">
-          <div className="imagesection">
-            <img src="Image_5.png" alt="erp solutions" />
-          </div>
-          <div className="headingtextSection">
-            <h2 className="animated-heading">Server & Desktop Support</h2>
-            <p>
-              We provide comprehensive IT infrastructure support, from server monitoring and desktop troubleshooting to maintenance and upgrades. With proactive solutions and expert assistance, we minimize downtime, maximize reliability, and keep your team working confidently without interruptions.
-            </p>
-          </div>
-        </div>
-        <div className="frontdiv1">
-          <div className="imagesection">
-            <img src="Image_6.png" alt="erp solutions" />
-          </div>
-          <div className="headingtextSection">
-            <h2 className="animated-heading">Teleservices & Customer Support</h2>
-            <p>
-              We deliver end-to-end outsourcing solutions that boost customer satisfaction and efficiency. From teleservices to full support management, our trained professionals and advanced systems ensure timely, personalized care—helping you provide world-class experiences while focusing on core priorities.
-            </p>
-          </div>
-        </div>
-
+        </section>
 
       </div>
+      <RestHome />
+
       <About />
       <OurPartners />
 

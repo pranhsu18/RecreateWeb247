@@ -10,7 +10,7 @@ export default function About() {
 
       <div className="wrapper">
         <div className="aboutus-text">
-          <p>We provide innovative enterprise solutions, <span>ERP Implementations</span>, and engaging <span>Multimedia Content</span> that empower businesses worldwide. With expertise in <span> Development </span>,<span>Digital Design</span>  and  <span>Customer Support</span> we deliver scalable, creative, and efficient services that enhance productivity, streamline operations, and strengthen brand presence.</p>
+          <p>We provide innovative enterprise solutions, <span>ERP Implementations</span>, and engaging <span  >Multimedia Content</span> that empower businesses worldwide. With expertise in <span > Development </span>,<span >Digital Design</span>  and  <span >Customer Support</span> we deliver scalable, creative, and efficient services that enhance productivity, streamline operations, and strengthen brand presence.</p>
         </div>
 
         <div className="card-info">

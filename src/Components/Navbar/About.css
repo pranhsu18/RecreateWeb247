@@ -1,5 +1,5 @@
 .headings {
-  font-size: 54px;
+  font-size: 4vw;
   font-weight: bold;
   background: linear-gradient(90deg, #cf3166fb, #a700ff);
   -webkit-background-clip: text;
@@ -7,8 +7,8 @@
   background-clip: text;
   border-bottom: 1px solid #000000;
   text-align: left;
-  padding-left: 2vmax;
-  margin: 1rem;
+  padding-left: 1vw;
+  margin: 1vw;
 }
 
 .wrapper {
@@ -31,8 +31,7 @@
 }
 
 .aboutus-text p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   font-weight: bold;
   line-height: 1.5;
   color: #1f1f1f;
@@ -40,10 +39,10 @@
 
 }
 
-span {
-  font-size: 1.2rem;
+span{
+  font-size: 1.5vw;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.2;
   background: linear-gradient(to right, #f54266, #8e44ec);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -130,11 +129,11 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .animated-heading-about {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: bold;
   background: linear-gradient(90deg, #0206ff, #8400ff, #fc00ef, #ff0062);
   background-size: 300%;
@@ -160,12 +159,11 @@ span {
 }
 
 .frontheading .icon {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   margin-bottom: 10px;
 }
 
 .backtext {
-  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   background: linear-gradient(135deg, #cf3166fb, #a700ff, #180082);
   color: rgb(255, 255, 255);
@@ -177,10 +175,10 @@ span {
 
 .abouttext {
   padding: 2vmax;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
-.aboutus {
+.aboutus{
   font-size: 48px;
   font-weight: bold;
   background: linear-gradient(90deg, #cf3166fb, #a700ff);
@@ -206,8 +204,7 @@ span {
 
 .team {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-evenly;
   padding: 30px;
   flex-wrap: wrap;
   background: #f5f5f5;
@@ -215,7 +212,7 @@ span {
 
 .team-card {
   flex: 1 1 300px;
-  max-width: 340px;
+  max-width: 370px;
   background: #fff;
   border: 1px solid #d3d3d3;
   border-radius: 12px;
@@ -258,6 +255,7 @@ span {
 }
 
 @media (max-width : 1200px) {
+  
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -265,13 +263,23 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem 1rem;
-    gap: 3rem;
+    gap: 2rem;
   }
-  .aboutus-text {
-  max-width: 15vh;
-  height: 60vh;
+  
+.aboutus-text {
+  max-width: 25vw;
+  height: 33vw;
   border-radius: 15px;
   padding: 2rem 0;
+}
+
+.aboutus-text p {
+  font-size: 1.5vw;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #1f1f1f;
+  text-align: justify;
+
 }
   
 

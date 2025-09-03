@@ -31,8 +31,8 @@ export default function Footer() {
           <h3>Navigation</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/categories">Categories</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Categories</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
