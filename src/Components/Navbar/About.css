@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 .headings {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 4vw;
   font-weight: bold;
   background: linear-gradient(90deg, #cf3166fb, #a700ff);
@@ -23,6 +26,8 @@
 }
 
 .aboutus-text {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   max-width: 25vw;
   height: 33vw;
   color: blue;
@@ -31,6 +36,8 @@
 }
 
 .aboutus-text p {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 1.5vw;
   font-weight: bold;
   line-height: 1.5;
@@ -40,6 +47,8 @@
 }
 
 span{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 1.5vw;
   font-weight: bold;
   line-height: 1.2;
@@ -52,6 +61,8 @@ span{
 
 
 .card-info {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   width: 25vw;
   height: 33vw;
   transform-style: preserve-3d;
@@ -107,6 +118,8 @@ span{
 
 .backtext,
 .fronttext {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -115,6 +128,7 @@ span{
 }
 
 .fronttext {
+  
   background: linear-gradient(to bottom right, #fdfdfd, #d6e4ff);
   display: flex;
   align-items: center;
@@ -133,6 +147,8 @@ span{
 }
 
 .animated-heading-about {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 2vw;
   font-weight: bold;
   background: linear-gradient(90deg, #0206ff, #8400ff, #fc00ef, #ff0062);
@@ -164,6 +180,7 @@ span{
 }
 
 .backtext {
+  
   position: absolute;
   background: linear-gradient(135deg, #cf3166fb, #a700ff, #180082);
   color: rgb(255, 255, 255);
@@ -173,12 +190,17 @@ span{
   transform: rotateY(180deg);
 }
 
+
 .abouttext {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   padding: 2vmax;
   font-size: 1.5vw;
 }
 
 .aboutus{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 48px;
   font-weight: bold;
   background: linear-gradient(90deg, #cf3166fb, #a700ff);
@@ -197,6 +219,8 @@ span{
 }
 
 .header h1 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 26px;
   font-weight: 700;
   color: #000;
@@ -233,6 +257,8 @@ span{
 }
 
 .team-card h3 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 20px;
   font-weight: bold;
   margin: 15px 0 5px;
@@ -240,6 +266,8 @@ span{
 }
 
 .team-card h4 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 15px;
   color: #007bff;
   margin-bottom: 10px;
@@ -247,6 +275,8 @@ span{
 }
 
 .team-card p {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 14px;
   color: #555;
   line-height: 1.5;
@@ -254,9 +284,10 @@ span{
   text-align: center;
 }
 
-@media (max-width : 1200px) {
+@media (max-width : 900px) {
   
   .wrapper {
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -267,19 +298,252 @@ span{
   }
   
 .aboutus-text {
-  max-width: 25vw;
-  height: 33vw;
+
+  max-width: 80vw;
+  height: auto;
   border-radius: 15px;
-  padding: 2rem 0;
+  padding: 2vw 6vw;
+  
 }
 
 .aboutus-text p {
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   font-weight: bold;
   line-height: 1.5;
   color: #1f1f1f;
   text-align: justify;
 
+}
+
+span{
+  font-size: 2.5vh;
+  font-weight: bold;
+  line-height: 1.5;
+  
+}
+
+
+.card-info {
+
+  width: 80vw;
+  height: 40em;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+
+}
+
+.card-info::after,
+.card-info::before {
+  --angle: 0deg;
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  background: conic-gradient(from var(--angle), transparent 10%, rgb(140, 0, 255), rgb(255, 0, 234), rgb(255, 0, 85));
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 0.2em;
+  animation: 3s spin linear infinite;
+}
+
+.card-info::before {
+  filter: blur(0.3em);
+  opacity: 0.8;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+
+  }
+}
+
+.card-info:hover {
+  transform: rotateY(180deg);
+}
+
+.backtext,
+.fronttext {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.fronttext {
+  
+  background: linear-gradient(to bottom right, #fdfdfd, #d6e4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+}
+
+.frontheading {
+
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animated-heading-about {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5vh;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0206ff, #8400ff, #fc00ef, #ff0062);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fireShimmer 2s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes fireShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.frontheading .icon {
+  font-size: 3vh;
+  margin-bottom: 10px;
+}
+
+.backtext {
+  
+  position: absolute;
+  background: linear-gradient(135deg, #cf3166fb, #a700ff, #180082);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+
+.abouttext {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  padding: 2vmax;
+  font-size: 2.5vh;
+}
+
+.aboutus{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #cf3166fb, #a700ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 1px solid #000000;
+  text-align: left;
+  padding-left: 1vmax;
+  margin: 2vmax;
+}
+
+.header {
+  text-align: center;
+  padding: 15px;
+}
+
+.header h1 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+.team {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+}
+
+.team-card {
+  flex: 1 1 300px;
+  max-width: 370px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: fill;
+  display: block;
+}
+
+.team-card h3 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  text-align: center;
+}
+
+.team-card h4 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-card p {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  padding: 0 15px 20px;
+  text-align: center;
 }
   
 

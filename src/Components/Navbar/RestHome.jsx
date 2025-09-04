@@ -212,6 +212,7 @@ const Contact = () => {
               <li>
                 <span className="icon1">✔</span>
                 Upgrade & Security Management
+
               </li>
               {/* repeat for other list items */}
             </ul>

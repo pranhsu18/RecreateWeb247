@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-body{
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 .hero {
   background: #af9dff;
   color: #030202;
@@ -27,6 +23,8 @@ body{
 }
 
 .hero-heading {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 5vw;
   font-weight: 700;
 }
@@ -38,20 +36,21 @@ body{
 .hero-heading .highlight {
   padding-left: 8vw;
   color: #ad01fd;
-  font-size: 6vw;
-  /* color:transparent;     */
-  -webkit-text-stroke: 2px #ff006a;
-  /* Border around text */
+  font-size: 6.5vw;
 
 }
 
 .hero-heading .yellow {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   padding-left: 12vw;
   color: #ff00ea;
   font-size: 4vw;
 }
 
 .hero-heading .last {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   padding-left: 14vw;
   color: #a200ff;
   font-size: 3.5vw;
@@ -109,6 +108,8 @@ body{
 }
 
 .service-card p {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   font-size: 1vw;
   font-weight: 600;
   margin: 0.5vh 0;
@@ -125,7 +126,7 @@ body{
   }
 }
 
-/* Responsive */
+
 
 
 @media (max-width: 800px) {
@@ -137,7 +138,6 @@ body{
 
   .hero-left,
   .hero-right {
-    border: 2px solid blue;
     height: 45%;
     width: 100%;
   }
